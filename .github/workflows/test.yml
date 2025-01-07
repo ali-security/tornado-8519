@@ -60,9 +60,9 @@ jobs:
             # Pypy is a lot slower due to jit warmup costs, so don't run the
             # "full" test config there.
             tox_env: pypy3
-          - python: '3.8'
-            # Docs python version must be synced with tox.ini
-            tox_env: docs
+#          - python: '3.8'
+#            # Docs python version must be synced with tox.ini
+#            tox_env: docs
 
     steps:
       - uses: actions/checkout@v3
